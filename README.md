@@ -3,7 +3,7 @@ Zookeeper
 This is the Ansible role for installing Zookeeper.
 
 ## Dependencies
-- java
+- ansible >= 2.0
 
 ## Usage
 
