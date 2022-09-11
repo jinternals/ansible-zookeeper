@@ -1,7 +1,7 @@
 ---
 # setup
-zookeeper_version: 3.4.9
-zookeeper_download_url: 'http://apache.mirrors.tds.net/zookeeper/zookeeper-{{zookeeper_version}}/zookeeper-{{zookeeper_version}}.tar.gz'
+zookeeper_version: 3.8.0
+zookeeper_download_url: 'https://dlcdn.apache.org/zookeeper/zookeeper-{{zookeeper_version}}/zookeeper-{{zookeeper_version}}.tar.gz'
 zookeeper_binary_archive: /opt/zookeeper-{{zookeeper_version}}.tar.gz
 zookeeper_binary_dir: /opt/zookeeper-{{zookeeper_version}}
 
