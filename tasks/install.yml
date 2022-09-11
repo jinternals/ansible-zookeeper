@@ -41,6 +41,9 @@
     owner={{zookeeper_user}}
     group={{zookeeper_group}}
 
+- name: Delete the zookeeper tar
+  shell: rm {zookeeper_binary_archive}}
+
 - name: Rename directory
   shell: mv `ls -d -1 {{zookeeper_binary_dir}}*` {{zookeeper_binary_dir}}
 
