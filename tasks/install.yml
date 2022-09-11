@@ -42,7 +42,7 @@
     group={{zookeeper_group}}
 
 - name: Rename directory
-  shell: mv `ls -d -1 {{zookeeper_binary_archive}}*` {{zookeeper_binary_archive}}
+  shell: mv `ls -d -1 {{zookeeper_binary_dir}}*` {{zookeeper_binary_dir}}
 
 - name: link /opt/zookeeper to the right version
   file:
