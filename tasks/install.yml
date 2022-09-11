@@ -46,6 +46,7 @@
     src={{zookeeper_binary_dir}}
     path=/opt/zookeeper
     follow=false
+    force=yes
     state=link
 
 - name: install zookeeper init script
