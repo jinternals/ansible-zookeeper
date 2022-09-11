@@ -43,9 +43,9 @@
 
 - name: link /opt/zookeeper to the right version
   file:
-    src: {{zookeeper_binary_dir}}
-    dest: /opt/zookeeper
-    state: link
+    src={{zookeeper_binary_dir}}
+    dest=/opt/zookeeper
+    state=link
 
 - name: install zookeeper init script
   template: src=zookeeper-server.j2 dest=/etc/init.d/zookeeper-server mode=0755
