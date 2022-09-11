@@ -41,13 +41,16 @@
     owner={{zookeeper_user}}
     group={{zookeeper_group}}
 
+- name: Rename directory
+  shell: mv `ls -d -1 {{zookeeper_binary_archive}}*` {{zookeeper_binary_archive}}
+
 - name: link /opt/zookeeper to the right version
   file:
     src={{zookeeper_binary_dir}}
     dest=/opt/zookeeper
     state=link
     force=yes
-    follow=false
+    follow=False
 
 - name: install zookeeper init script
   template: src=zookeeper-server.j2 dest=/etc/init.d/zookeeper-server mode=0755
