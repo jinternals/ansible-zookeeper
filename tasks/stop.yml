@@ -1,5 +1,6 @@
 ---
 - name: stop zookeeper
+  register: service_stop
   failed_when:
     - '"Could not find the requested service" not in service_stop.stdout'
     - service_stop.rc != 0
