@@ -1,9 +1,9 @@
 ---
-- include: stop.yml
+- include_tasks: stop.yml
   tags: [deploy, restart, stop]
-- include: install.yml
+- include_tasks: install.yml
   tags: [deploy]
-- include: configure.yml
+- include_tasks: configure.yml
   tags: [deploy, configure]
-- include: start.yml
+- include_tasks: start.yml
   tags: [deploy, restart]
